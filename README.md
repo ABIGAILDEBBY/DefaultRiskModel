@@ -44,7 +44,7 @@ The dataset includes the following features:
 | Loan_Status          | Loan approved (Y/N)                               |
 | Loss                 | Monetary loss incurred if the loan defaults       |
 
-You can find the dataset [here](path_to_dataset).
+You can find the dataset [here](https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/#ProblemStatement).
 
 ---
 
