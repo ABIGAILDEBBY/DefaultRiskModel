@@ -94,8 +94,11 @@ To run this project locally, follow these steps:
 This project employs various machine learning models to predict loan default and estimate loss, including:
 - Logistic Regression
 - Random Forest
-- Gradient Boosting
-- XGBoost
+- Simple Vector Machine (SVM)
+- K-Nearest Neighbors
+- Decision Tree 
+- Naive Bayes
+- Gradient Boosting Classifier
 
 Each model is implemented and evaluated within the Jupyter Notebook to determine its effectiveness in predicting loan defaults and estimating financial loss.
 
