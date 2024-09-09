@@ -1,5 +1,6 @@
-import nbformat
 import re
+
+import nbformat
 
 
 def extract_imports(notebook_path):
