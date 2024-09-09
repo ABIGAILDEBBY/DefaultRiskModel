@@ -2,7 +2,7 @@
 
 This project aims to predict whether a loan will default, as well as estimate the monetary loss incurred if it does. By leveraging machine learning algorithms, this model helps financial institutions make informed decisions regarding loan approvals and manage financial risks.
 
-![Loan Prediction](path_to_image/loan_prediction_image.png)
+![Loan Prediction](assets/imgs/dataset-cover.jpg)
 
 ## Table of Contents
 
