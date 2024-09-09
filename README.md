@@ -1,6 +1,6 @@
 # Loan Default Prediction
 
-This project aims to predict whether a loan will be approved or denied based on various features of the applicants. By leveraging machine learning algorithms, this model helps financial institutions make informed decisions regarding loan approvals.
+This project aims to predict whether a loan will default, as well as estimate the monetary loss incurred if it does. By leveraging machine learning algorithms, this model helps financial institutions make informed decisions regarding loan approvals and manage financial risks.
 
 ![Loan Prediction](path_to_image/loan_prediction_image.png)
 
@@ -11,7 +11,7 @@ This project aims to predict whether a loan will be approved or denied based on 
 3. [Installation](#installation)
 4. [Usage](#usage)
 5. [Models](#models)
-6. [Results](#results)
+6. [Evaluation](#evaluation)
 7. [Contributing](#contributing)
 8. [License](#license)
 
@@ -19,7 +19,7 @@ This project aims to predict whether a loan will be approved or denied based on 
 
 ## Introduction
 
-Loan approval is a critical task for financial institutions. Approving loans for individuals based on their creditworthiness reduces financial risks. This project uses several machine learning techniques to classify whether a loan application will be approved or rejected based on a dataset of applicant features.
+Loan default prediction is a critical task for financial institutions to mitigate financial risks. This project aims to predict both whether a loan will default and the severity of the loss using a dataset of applicant features. By utilizing various machine learning techniques, the project bridges traditional banking approaches with asset management perspectives, optimizing risk assessment.
 
 ---
 
@@ -42,6 +42,7 @@ The dataset includes the following features:
 | Credit_History       | Credit history meets guidelines                   |
 | Property_Area        | Urban/ Semi Urban/ Rural                          |
 | Loan_Status          | Loan approved (Y/N)                               |
+| Loss                 | Monetary loss incurred if the loan defaults       |
 
 You can find the dataset [here](path_to_dataset).
 
@@ -66,17 +67,60 @@ To run this project locally, follow these steps:
     pip install -r requirements.txt
     ```
 
-4. Ensure that you have Jupyter Notebook or JupyterLab installed to run the notebook files.
+4. Ensure you have Jupyter Notebook installed to run the notebook files:
+    ```bash
+    pip install notebook
+    ```
 
 ---
 
 ## Usage
 
-1. Preprocess the dataset using the preprocessing script.
-2. Train the model on the provided dataset using various machine learning algorithms.
-3. Make predictions on the test dataset.
+1. **Preprocess the Dataset:** Use the preprocessing cells in the Jupyter Notebook to clean and prepare the data.
+2. **Train the Model:** Utilize the cells in the Jupyter Notebook to train various machine learning models on the dataset.
+3. **Make Predictions:** Follow the instructions in the notebook to make predictions on the test dataset.
 
-To run the project, use:
+**To run the Jupyter Notebook:**
+1. Launch Jupyter Notebook:
+    ```bash
+    jupyter notebook
+    ```
+2. Open the relevant notebook file and follow the instructions within.
 
-```bash
-python train_model.py
+---
+
+## Models
+
+This project employs various machine learning models to predict loan default and estimate loss, including:
+- Logistic Regression
+- Random Forest
+- Gradient Boosting
+- XGBoost
+
+Each model is implemented and evaluated within the Jupyter Notebook to determine its effectiveness in predicting loan defaults and estimating financial loss.
+
+---
+
+## Evaluation
+
+Model performance is evaluated using the Mean Absolute Error (MAE) of the loss predictions. MAE measures the average magnitude of errors in the predictions, with a lower MAE indicating better accuracy.
+
+---
+
+## Contributing
+
+Contributions are welcome! To contribute to this project, please follow these steps:
+1. Fork the repository on GitHub.
+2. Create a new branch for your feature or fix.
+3. Commit your changes and push them to your forked repository.
+4. Open a pull request on the original repository with a description of your changes.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+For further information or questions, please contact [your email] or open an issue on the repository.
